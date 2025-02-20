@@ -43,7 +43,6 @@ def ask_question(question, client, messages=[]):
     # Provide examples to the model for how it should respond to the next request.
     answer_message = completion.choices[0].message
 
-
     messages.append(answer_message)
 
     return answer_message.content, messages
